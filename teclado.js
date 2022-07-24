@@ -60,9 +60,8 @@ export default class Teclado {
                 this.teclasPrincipales.forEach((tecla,index) => tecla.innerHTML = `${this.ABC[index]}`);
                 this.teclasShift.forEach((tecla,index) => tecla.innerHTML = `<p>${this.shift[index]}</p>`);
                 this.ltr.forEach(letra => letra.innerHTML = letra.innerHTML.toUpperCase());
-                this.btnShift[1].style.background = "#f00";
-                this.teclaAltGr.style.background = "transparent";
                 this.estadoAltGr = false;
+                this.teclaAltGr.style.background = "transparent";
             } else {
                 this.teclasPrincipales.forEach((tecla,index) => tecla.innerHTML = `${this.ABC[index]}`);
                 this.teclaAltGr.style.background = "transparent";
@@ -84,16 +83,13 @@ export default class Teclado {
         } else {
             if(this.estadoAltGr){
                 this.teclasPrincipales.forEach((tecla,index) => tecla.innerHTML = `<p>${this.AltGr[index]}</p>`);
-                this.estadoAltGr = true;
                 this.estadoShift = false;
-                this.teclaAltGr.style.background = "#f00";
-                this.btnShift[index].style.background = "transparent"
+                this.btnShift[index].style.background = "transparent";
             } else {
                 this.teclasPrincipales.forEach((tecla,index) => tecla.innerHTML = `<p>${this.ABC[index]}</p>`);
                 this.ltr.forEach(letra => letra.innerHTML = letra.innerHTML.toLowerCase());
                 this.btnShift[index].style.background = "transparent";
                 this.estadoShift = false;
-                this.estadoAltGr = false
             }
         }
     }
