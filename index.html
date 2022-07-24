@@ -2,66 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>keyboard virtual</title>
+    <title>Keyboard Virtual</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/f845b9182b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main class="main">
         <header class="header">
-            <h1 class="header__h1">Teclado virtual</h1>
+            <h1 class="header__h1">Teclado virtual <b style="font-size:16px;">By Fernando Matías Pessoa</b></h1>
         </header>
         <section class="card-keyboard">
-            <input type="text" id="input-text" class="keyboard__input-text">
-            <div class="keyboard-grid">   
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="keyboard__div-input">
+                <div class="keyboard__div-center">
+                    <input type="text" id="input-text" class="keyboard__input-text" value="" placeholder="texto">
+                    <p class="copy-btn"><i class="fa-solid fa-copy"></i></p>
+                </div>
+            </div>
+            <div class="keyboard-grid"> 
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item item shift cambiar"><p></p></div>
+                <div class="grid-item letr-delete" id="delete-char"><img src="img/delete.png" alt=""></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar letras"><p></p></div>
+                <div class="grid-item item cambiar shift"><p></p></div>
+                <div class="grid-item item cambiar shift"><p></p></div>
+                <div class="grid-item letr-mayus"><p>BLOCK MAYÚS</p></div>
+                <div class="grid-item item letras  cambiar letr-a"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-s"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-d"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-f"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-g"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-h"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-j"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-k"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-l"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-ñ"><p></p></div>
+                <div class="grid-item item letr-cl shift cambiar "><p></p></div>
+                <div class="grid-item item letr-cr shift cambiar "><p></p></div>
+                <div class="grid-item letr-shift-1 ltr-shift"><p>shift</p></div>
+                <div class="grid-item item letr-fl shift cambiar "><p></p></div>
+                <div class="grid-item item letras  cambiar letr-z"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-x"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-c"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-v"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-b"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-n"><p></p></div>
+                <div class="grid-item item letras  cambiar letr-m"><p></p></div>
+                <div class="grid-item item letr-coma shift cambiar"><p></p></div>
+                <div class="grid-item item letr-punto shift cambiar"><p></p></div>
+                <div class="grid-item item letr-- shift cambiar"><p></p></div>
+                <div class="grid-item letr-shift-2 ltr-shift"><p>shift</p></div>
+                <div class="grid-item letr-Ctrl-1"><p>Ctrl</p></div>
+                <div class="grid-item letr-win"><p>win</p></div>
+                <div class="grid-item letr-alt"><p>Alt</p></div>
+                <div class="grid-item item letr-space"> </div>
+                <div class="grid-item letr-alt-gr"><p>Alt Gr</p></div>
+                <div class="grid-item letr-Ctrl-2"><p>Ctrl</p></div>
             </div>
         </section>
     </main>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>
